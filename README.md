@@ -1,2 +1,2 @@
 # Javascript-Practice
-A place to practice my JavaScript practice.
+A place to practice my beaucoup JavaScrilla.
