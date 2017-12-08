@@ -119,3 +119,27 @@ When the getRemainder runs, the function knows what numberOne and numberTwo equa
 By adding multiple parameters, we can build functions that are more flexible. Now the function has two variables that we can define when we call the function.
 */
 
+
+
+
+
+/*
+return
+Using console.log as the result of a function isn't the best use of a function. The purpose of a function is to take some input, perform some task on that input, then return a result.
+
+To return a result, we can use the return keyword. Take a look at our function from the last exercise, now re-written slightly:
+*/
+
+
+function getRemainder(numberOne, numberTwo) {
+  return numberOne % numberTwo;
+}
+
+
+/*
+console.log(getRemainder(365, 27));
+// Output: 14
+Instead of using console.log inside the getRemainder function, we used the return keyword. return will take the result of the math operation and give it back to whatever calls it.
+On the last line, we called the getRemainder function inside of a console.log statement, which outputted the result of 14.
+This code achieved the same output as before, however now our code is better. Why? If we wanted to use the getRemainder function in another place in our program, we could without printing the result to the console. Using return is generally a best practice when writing functions, as it makes your code more maintainable and flexible.
+*/
