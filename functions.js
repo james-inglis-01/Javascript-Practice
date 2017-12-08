@@ -24,6 +24,7 @@ pressPowerButton();
 pressPowerButton();
 // Output: Calculator turning off.
 
+
 /*
 This code turns the calculator on if it is currently off, and turns it off if the calculator is currently on.
 
