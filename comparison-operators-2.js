@@ -1,3 +1,6 @@
+//comparison operators
+
+
 const moonPhase = 'full';
 
 switch (moonPhase) {
