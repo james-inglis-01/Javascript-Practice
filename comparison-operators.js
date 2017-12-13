@@ -1,3 +1,6 @@
+//comparison operators
+
+
 const hungerLevel = 3;
 if (hungerLevel >= 7) {
   console.log('Time to eat!');
