@@ -1,3 +1,6 @@
+//else if statements
+
+
 const moonPhase = 'full';
 
 switch (moonPhase) {
