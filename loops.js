@@ -1,3 +1,11 @@
+//for loops
+
+
+for(var i = 0; i < myArray.length; i++) {
+  console.log(myArray[i])
+}
+
+
 /*
 while Loops
 Awesome job! for loops are great, but they have a limitation: you have to know how many times you want the loop to run. What if you want a loop to run an unknown or variable number of times instead?
