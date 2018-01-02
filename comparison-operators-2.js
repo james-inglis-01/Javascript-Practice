@@ -5,7 +5,7 @@ const moonPhase = 'full';
 
 switch (moonPhase) {
   case 'full':
-    console.log('Howwwwlll!!');
+    console.log('Howwwwlll Im a wolf!!');
     break;
   case 'mostly full':
     console.log('Arms and legs are getting hairier');
