@@ -28,3 +28,5 @@
     </div>
   </div>
 </div>
+
+//All jQuery functions start with a $, usually referred to as a dollar sign operator
