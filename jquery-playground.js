@@ -1,3 +1,4 @@
+//jquery playground
 
 <script>
   $(document).ready(function() {
