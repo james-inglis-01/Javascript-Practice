@@ -1,4 +1,4 @@
-//else if statements
+//else if statements The loop is executed from top to bottom so you will want to be careful of what statement comes first.
 
 
 const moonPhase = 'full';
