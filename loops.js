@@ -24,3 +24,25 @@ The loop begins with the keyword while
 Inside the parentheses, we can insert a condition. As long as the variable evaluates to true the block of code will loop.
 Inside the code block we can write any code we'd like to loop.
 */
+
+//Profile lookup using a for loop nested if statements and dot and bracket notation
+
+function lookUpProfile(firstName, prop){
+  
+    for (var i = 0; i < contacts.length; i++) {
+      if (contacts[i].firstName === firstName) {
+        if (contacts[i].hasOwnProperty(prop)) {
+            return contacts[i][prop];
+        } else {
+          return "No such property";
+        } 
+      }
+    } return "No such contact";
+      
+          
+  
+  }
+  
+  
+  lookUpProfile("Bob", "number");
+  
