@@ -71,5 +71,5 @@ function lookUpProfile(firstName, prop){
   }
   
   
-  lookUpProfile("Bob", "number");
+  lookUpProfile("Harry", "likes");
   
