@@ -28,7 +28,7 @@ function cc(card) {
   
   
   return count;
-  // Only change code above this line
+  
 }
 
 // Add/remove calls to test function.
