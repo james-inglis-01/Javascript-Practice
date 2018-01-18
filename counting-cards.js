@@ -1,4 +1,5 @@
 //Blackjack card counting code
+
 var count = 0;
 
 function cc(card) {
