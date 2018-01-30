@@ -1,4 +1,4 @@
-//comparison operators
+//basic comparison operators
 
 
 const hungerLevel = 3;
