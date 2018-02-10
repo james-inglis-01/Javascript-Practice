@@ -1,4 +1,4 @@
-//comparison operators II switch statements
+//comparison operators II - switch statements
 
 
 const moonPhase = 'full';
