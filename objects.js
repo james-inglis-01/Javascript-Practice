@@ -11,7 +11,7 @@ function phoneticLookup(val) {
     charlie: "Chicago",
     delta: "Denver",
     echo: "Easy",
-    foxtrot: "Frank"
+    foxtrot: "Franklin"
   };
   
   result = lookup[val];
