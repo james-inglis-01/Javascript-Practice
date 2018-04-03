@@ -29,3 +29,15 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+//Reversing a string
+
+function reverseString(str) {
+  var reversedStr = " ";
+  //Create a variable where the reversed string will be assigned to
+  reversedStr = str.split("").reverse().join("");
+  //We have to split the string at each character then reverse then join each character
+  return reversedStr;
+}
+
+reverseString("Greetings from Earth");
