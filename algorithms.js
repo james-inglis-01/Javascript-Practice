@@ -41,3 +41,35 @@ function reverseString(str) {
 }
 
 reverseString("Greetings from Earth");
+
+//Checking for palindromes
+
+function palindrome(str) {
+  
+  str = str.toLowerCase();
+  //Changed string to lowercase so no case sensitive issues
+  for(var i = 0; i < str.length; i++){
+    str = str.replace(' ', '');
+    str = str.replace(',', '');
+    str = str.replace('.', '');
+    str = str.replace('/', '');
+    str = str.replace('-', '');
+    str = str.replace('_', '');
+    str = str.replace('(', '');
+    str = str.replace(')', '');
+    str = str.replace(':', '');
+  }
+  //Loop to replace special characters without regular expressions
+  var copy = str.split('').reverse().join('');
+  //Create a copy of our string and reverse it
+  if(copy === str) {
+    return true;
+  } else {
+      return false;
+    }
+  
+}
+
+
+
+palindrome("eye");
