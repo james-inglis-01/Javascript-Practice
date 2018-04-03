@@ -10,6 +10,7 @@ function findNumber(arr, k) {
 
 }
 
+
 //Factorializing numbers
 function factorialize(num) {
   var count = num;
@@ -30,6 +31,7 @@ function factorialize(num) {
 
 factorialize(5);
 
+
 //Reversing a string
 
 function reverseString(str) {
@@ -41,6 +43,7 @@ function reverseString(str) {
 }
 
 reverseString("Greetings from Earth");
+
 
 //Checking for palindromes
 
@@ -70,6 +73,25 @@ function palindrome(str) {
   
 }
 
-
-
 palindrome("eye");
+
+
+//Finding the length of the longest word in a string
+
+
+function findLongestWord(str) {
+  var arrayOfStrings = str.split(' ');
+  //Create an array of strings splitting at every space
+  var longestStr = '';
+  //Temporary placeholder for longest string
+  for(var i = 0; i < arrayOfStrings.length; i++) {
+    if(longestStr.length < arrayOfStrings[i].length) {
+      longestStr = arrayOfStrings[i];
+    }
+  }
+  //Iterate through the array and compare longest string with current string
+  str = longestStr;
+  return str.length;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
