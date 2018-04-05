@@ -45,7 +45,7 @@ function reverseString(str) {
 reverseString("Greetings from Earth");
 
 
-//Checking for palindromes
+//Checking for palindromes (free code camp edition)
 
 function palindrome(str) {
   
@@ -78,7 +78,6 @@ palindrome("eye");
 
 //Finding the length of the longest word in a string
 
-
 function findLongestWord(str) {
   var arrayOfStrings = str.split(' ');
   //Create an array of strings splitting at every space
@@ -95,3 +94,27 @@ function findLongestWord(str) {
 }
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
+
+
+//Title case a sentance
+
+function titleCase(str) {
+  var arrayOfStrings = str.split(' ');
+  //Splits one string into an array separated by spaces
+  for(var i = 0; i < arrayOfStrings.length; i++) {
+    var placeholder = arrayOfStrings[i];
+    //Placeholder for original string
+    var upperLetter = placeholder.charAt(0).toUpperCase();
+    //Selects first letter and uppercases it
+    placeholder = placeholder.slice(1, placeholder.length).toLowerCase();
+    //Selects 2nd letter to end of the word and lowercases it
+    arrayOfStrings[i] = upperLetter.concat(placeholder);
+    //Concats uppercase letter with rest of lowercase word
+  }
+
+  str = arrayOfStrings.join(' ');
+  //Takes array and sets str to a single string
+  return str;
+}
+
+titleCase("I'm a little tea pot");
