@@ -138,3 +138,17 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("Bastian", "n");
+
+
+//Repeat a string
+
+function repeatStringNumTimes(str, num) {
+  var emptyStr = "";
+  if(num > 0) {
+    return str.repeat(num);
+  } else if (num <= 0) {
+    return emptyStr;
+  }
+}
+
+repeatStringNumTimes("abc", 3);
