@@ -118,3 +118,23 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+
+
+//Confirm the ending
+/*
+Check if a string (first argument, str) ends with the given target string (second argument, target).
+*/
+
+function confirmEnding(str, target) {
+  var start = str.length - (target.length);
+  //Var for just comparing length of string
+  if(str.substr(start, str.length) == target) {
+    //Compares end of string with the target string
+    return true;
+  } else {
+    return false;
+  }
+  
+}
+
+confirmEnding("Bastian", "n");
