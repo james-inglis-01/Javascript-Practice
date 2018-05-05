@@ -189,3 +189,43 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+
+//Slasher flick
+//Return the remaining elements of an array after chopping off n elements from the head.
+
+function slasher(arr, howMany) {
+  arr.splice(0, howMany);
+  return arr;
+}
+
+slasher([1, 2, 3], 2);
+
+
+
+//Mutation
+/*
+Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+*/
+
+function mutation(arr) {
+  var word1 = arr[0].toLowerCase();
+  var word2 = arr[1].toLowerCase();
+  //Lowercase both inputs for comparison purposes
+  
+  for(var i = 0; i < word2.length; i++) {
+    /*
+    Length of 2nd word is important because
+    we are iterating through it's letters to see if they are in word1
+    */
+    var value = word1.indexOf(word2[i]);
+    //Value holder for character
+    if(value === -1) {
+      //-1 means it's not contained in word1
+      return false;
+    } 
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
