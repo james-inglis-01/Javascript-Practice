@@ -152,3 +152,40 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("abc", 3);
+
+
+//Truncate a string
+
+
+function truncateString(str, num) {
+  if(num > 3) {
+  if(str.length > num) {
+    str = str.slice(0, num - 3).concat("...");
+    //Slice the string 3 short of num then add ... to end of string
+  }
+  return str;
+}
+ else{
+  str = str.slice(0, num).concat("...");
+}
+return str;
+}
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
+
+/*
+Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+*/
+
+function chunkArrayInGroups(arr, size) {
+  var newArray = [];
+  var count = 0;
+  
+  while(count < arr.length) {
+    newArray.push(arr.slice(count, count + size));
+    count = count + size;
+  }
+  
+  return newArray;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
