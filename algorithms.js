@@ -229,3 +229,10 @@ function mutation(arr) {
 }
 
 mutation(["hello", "hey"]);
+
+
+//Return the Four Letter Strings
+
+function isFourLetters(arr) {
+	return arr.filter(fourLetterWords => fourLetterWords.length == 4);
+}
