@@ -236,3 +236,5 @@ mutation(["hello", "hey"]);
 function isFourLetters(arr) {
 	return arr.filter(fourLetterWords => fourLetterWords.length == 4);
 }
+
+//Further areas I need to study, higher order fat arrow fuctions and destructuring
